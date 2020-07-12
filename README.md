@@ -18,7 +18,9 @@ print ("1. IP/Port scanning")
 print ("2. Display running services")
 
 i=input("Enter a number to choose a service: ")
+
 if i==1 :
+
     try:
         mas = masscan.PortScanner()
     except masscan.PortScannerError:
